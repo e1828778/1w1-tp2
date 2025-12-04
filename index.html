@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhun-Sopryna-TP-2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+<!-- ---3 Google fonts différents: Germania One + Oswald + Uni frakturMaguntia -------- -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Oswald:wght@200..700&family=Pirata+One&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<!-- ---section : hero + nav + burger-------- -->
+
+<body>
+    <div class="hero" id="accueil">
+
+        <div class="hero__barresup">
+            <img class="hero__logo" src="img/Rolling-Stone-Logo.jpg" alt="logo" width="64" height="64">
+            <h1 class="hero__titre">Outkast</h1>
+            <nav class="navigation">
+                <label class="navigation__bouton" for="chk-burger">
+                    <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" alt="hero" width="32" height="32">
+                </label>
+                <input type="checkbox" id="chk-burger">
+                <nav class="navigation__menu">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#inscription">Inscription</a>
+                    <a href="#tableau">Tableau</a>
+                    <a href="#articles">Articles</a>
+                    <a href="#galerie">Galerie</a>
+                    <a href="#video">Vidéo</a>
+                    <a href="#adresse">Adresse</a>
+            </nav>
+        </div>
+        <!-- ----------section : .centre + Titre + sous-titre + p ---------------- -->
+        <header class="centre">
+            <h2> 2025 : Outkast entre au Temple de la renommée du Rock & Roll</h2>
+            <h3 class="hero__centre">
+            <p>Outkast a été intronisé au Rock and Roll Hall of Fame en 2025, une reconnaissance de son impact révolutionnaire sur le hip-hop et le genre sud. La cérémonie a été marquée par des hommages de Donald Glover, Tyler, the Creator et Janelle Monáe, ainsi que des performances de Big Boi. Big Boi et André 3000 ont tous deux pris la parole, soulignant l'importance de leur collaboration et de leur parcours. </p>
+            </h3>
+            </section>
+        </header>
+    </div>
+    <!-- ----------section : Inscription---------------- -->
+    <div>
+        <section class="inscription centre" id="inscription">
+            <h1>Inscription</h1>
+            <form class="formulaire">
+                <div class="formulaire__div">
+                    <fieldset>
+                        <label class="formulaire__label" for="txt-nom">Nom</label>
+                        <input class="formulaire__text" id="txt-nom" type="text" placeholder="Entrez votre nom">
+                    </fieldset>
+                    <fieldset>
+                        <label class="formulaire__label" for="txt-prenom">Prénom</label>
+                        <input class="formulaire__text" id="txt-prenom" type="text" placeholder="Entrez votre prenom">
+                    </fieldset>
+                    <fieldset>
+                        <label class="formulaire__label" for="txt-courriel">Courriel</label>
+                        <input class="formulaire__text" id="txt-courriel" type="email"
+                            placeholder="Entrez votre courriel">
+                    </fieldset>
+                </div>
+                <fieldset>
+                    <legend>Abonnement</legend>
+                    <label>Pro <input type="radio" name="rad-abonnement"></label>
+                    <label>Intermédiaire <input type="radio" name="rad-abonnement"></label>
+                    <label>Débutant <input type="radio" name="rad-abonnement"></label>
+                </fieldset>
+                <input type="submit" value="valider">
+            </form>
+        </section>
+    </div>
+    <!-- -----------section : Tableau------------------ -->
+
+    <div>
+        <section class="tableau centre" id="tableau">
+            <h1>Liste des chansons enregistrées par Outkast </h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Titre de chanson</th>
+                        <th>Année</th>
+                        <th>Album</th>
+                        <th>Durée</th>
+                        <th>Autres artistes</th>
+                        <th>Production</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>*</td>
+                        <td>Encore</td>
+                        <td>2001</td>
+                        <td>---</td>
+                        <td>3:45</td>
+                        <td>Lenny Kravitz</td>
+                        <td>Lenny Kravitz</td>
+                    </tr>
+
+                    <tr>
+                        <td>*</td>
+                        <td>Qu'en est-il de tes amis</td>
+                        <td>1992</td>
+                        <td>---</td>
+                        <td>4:55</td>
+                        <td>TLC</td>
+                        <td>Dallas Austin</td>
+                    </tr>
+
+                    <tr>
+                        <td>*</td>
+                        <td>Il n'y en a qu'un</td>
+                        <td>1998</td>
+                        <td>S.W.A.T Rituel de guérison</td>
+                        <td>4:13</td>
+                        <td>Witchdoctor</td>
+                        <td>Organized Noize</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Aquemini</td>
+                        <td>1998</td>
+                        <td>Aquemini</td>
+                        <td>5:19</td>
+                        <td>---</td>
+                        <td>Outkast</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>L'art de raconter des histoires (partie 1)</td>
+                        <td>1998</td>
+                        <td>Aquemini</td>
+                        <td>3:43</td>
+                        <td>Slick Rick</td>
+                        <td>Mr.DJ</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>L'art de raconter des histoires (partie 2)</td>
+                        <td>1998</td>
+                        <td>Aquemini</td>
+                        <td>2:48</td>
+                        <td>---</td>
+                        <td>Mr.DJ</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Chonkyfire</td>
+                        <td>1998</td>
+                        <td>Aquemini</td>
+                        <td>6:10</td>
+                        <td>---</td>
+                        <td>Outkast</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Libération</td>
+                        <td>1998</td>
+                        <td>Aquemini</td>
+                        <td>8:46</td>
+                        <td>Cee Lo Green, Erykah Badu et Big Rube</td>
+                        <td>Outkast</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Mamacita</td>
+                        <td>1998</td>
+                        <td>Aquemini</td>
+                        <td>5:52</td>
+                        <td>Masada, Witchdoctor</td>
+                        <td>Organized Noize</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Le retour du G</td>
+                        <td>1998</td>
+                        <td>Aquemini</td>
+                        <td>4:49</td>
+                        <td>---</td>
+                        <td>Organized Noize</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Joyeuse Saint-Valentin</td>
+                        <td>2003</td>
+                        <td>Speakerboxxx/The Love Below</td>
+                        <td>5:23</td> 
+                        <td>---</td>
+                        <td>André 3000</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div>
+        <section class="articles centre" id="articles">
+            <h1>Articles</h1>
+        </section>
+    </div>
+    <div>
+        <section class="galerie centre" id="galerie">
+            <h1>Galerie</h1>
+        </section>
+    </div>
+    <div>
+        <section class="video centre" id="video">
+            <h1>Vidéo</h1>
+        </section>
+    </div>
+
+<!-- -----------section : Adresse (PIED-DE-PAGE)------------------ -->
+<div class="bas">
+      <footer class="pied centre">
+        <section class="pied__section">
+          <h3>Coordonnées</h3>
+          <ul>
+            <li>Étudiant: Sopryna Chhun</li>
+            <li>Cours: 1W1- Mise en page Web</li>
+            <li>Groupe : 00002</li>
+            <li>Enseignant: Eddy Martin</li>
+          </ul>
+        </section>
+        <section class="pied__section">
+          <h3>Adresse</h3>
+          <ul>
+            <li>3800 Sherbrooke est</li>
+            <li>Montréal, QC</li>
+            <li>H1X 2A2</li>
+            <li>514-254-7131</li>
+            <li>514-254-7170</li>
+          </ul>
+        </section>
+        <section class="pied__cours">
+          <h3>Cours</h3>
+          <ul>
+            <li>1W1-Mise en page Web</li>
+            <li>1J1-Animation et intéractivité en jeux</li>
+            <li>1M1-Création vidéo</li>
+            <li>1M2-Conception graphique et img matricielle</li>
+          </ul>
+        </section>
+        <section class="pied__resume">
+          <h3>En résumé</h3>
+          <li>OutKast est un groupe de hip-hop américain, originaire d'Atlanta, en Géorgie. Son style musical est un mélange de Dirty South, G-funk, soul, neo soul, rock, crunk, RnB et jazz. Il se compose des rappeurs André « André 3000 » Benjamin (anciennement Dré) et Antwan « Big Boi » Patton. Groupe de hip-hop populaire et acclamé, il popularise le genre Dirty South dans les années 1990, mêlant plusieurs genres comme le funk, la soul, la musique psychédélique, la techno, le gospel et le jazz.</li>
+        </section>
+
+
+        <figure class="pied__sociaux">
+            <a class="rca-icon" href="https://github.com/e1828778" target="_blank" rel="noopener" aria-label="Github">
+          <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="25" height="25" alt="github"/>
+
+          
+          <a class="rca-icon" href="https://fr-ca.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=00f" width="25" height="25" alt="facebook"/>
+
+          
+          <a class="rca-icon" href="https://stackoverflow.com/questions" target="_blank" rel="noopener" aria-label="Stackoverflow">
+          <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=a00" width="25" height="25" alt="stackoverflow"/>
+
+
+          <a class="rca-icon" href="https://ca.linkedin.com/" target="_blank" rel="noopener" aria-label="Linkedin">
+          <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0960da" width="25" height="16" alt="linkedin"/>
+
+
+          <a class="rca-icon" href="https://www.messenger.com/" target="_blank" rel="noopener" aria-label="Messenger">
+          <img src="https://s2.svgbox.net/social.svg?ic=messenger&color=00f" width="25" height="25" alt="messenger"/>
+
+
+          <a class="rca-icon" href="https://discord.com/" target="_blank" rel="noopener" aria-label="Discord">
+          <img src="https://s2.svgbox.net/social.svg?ic=discord&color=3609da" width="25" height="25" alt="discord"/>
+        </figure>
+      </footer>
+    </div>
+
+        </section>
+    </div>     
+</body>
+</html>

@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+section, header {
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.centre {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 25px;
+    background-color: #ffffff7a;
+
+}
+
+/*****************BACKGROUND COLORS pour chaque sections******************************/
+body>div:nth-of-type(1) {
+    background: linear-gradient(to bottom, transparent 80%, black 100% ), 
+    url("../img/outk.webp");
+    background-position: 50%;
+    background-size: cover;
+}
+body>div:nth-of-type(2) {
+    background: linear-gradient(to top, transparent 80%, black 100%),
+    url("../img/outk-logo.jpg");
+    background-size: cover;
+}
+
+body>div:nth-of-type(3) {
+    background-color: rgb(146, 155, 217);
+}
+
+body>div:nth-of-type(4) {
+    background-color: rgb(136, 145, 207);
+}
+
+body>div:nth-of-type(5) {
+    background-color: rgb(119, 128, 211);
+}
+
+body>div:nth-of-type(6) {
+    background-color: rgb(67, 77, 164);
+}
+
+body>div:nth-of-type(7) {
+    background-color: rgb(34, 44, 134);
+}
+
+/******DIVISION .hero*************/
+
+.hero {
+    background-image: url("../img/outk.webp");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__barresup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(240, 248, 255, 0.342);
+}
+
+.hero__titre {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    color: black;
+    text-shadow: 1px 0px 10px blue;
+    font-family: "Germania One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.hero__centre{
+    margin: 0 auto 0 0;
+    max-width:900px;
+    padding: 30px;
+    background-color: #717070;
+    background: linear-gradient(rgba(0, 0, 255, 0.475), rgba(128, 0, 128, 0.265));
+}
+
+p {  
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.hero__logo {
+    border-radius: 15px;
+}
+
+.hero>.centre {
+    background-color: #ffffff5f;
+}
+
+/*****************DIVISION : Inscription*********************************************/
+input[type="submit"] {
+    background-color: blue;
+    color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 7px 127px;
+    margin-top: 40px;
+
+}
+/*****************DIVISION : Tableau*********************************************/
+table {
+    border: 1px solid #717070;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {}
+
+td, th {
+    border: 1px solid #aaa;
+    font-size: 2rem;
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    font-style: italic;
+    font-weight: bold;
+}
+
+caption {
+    font-size: 2rem;
+    padding: 7px;
+    border: 1px dotted rgb(65, 87, 119);
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #00000029;
+
+}
+
+/******DIVISION section : Adresse (pied-de-page) *************/
+.pied{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.pied__section{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px ;
+}
+
+li {
+    font-size: 15px;
+    padding: 2px;
+    margin: 2px;
+    list-style: none;
+
+}
+ul{
+    list-style: none;
+}
+.pied__cours{
+     flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+.pied__resume{
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+.pied__sociaux{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    gap: 37px;
+    margin: 0;
+}
