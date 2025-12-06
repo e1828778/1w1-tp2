@@ -9,7 +9,7 @@
 }
 
 .navigation__menu{
-    background-color: blue;
+    background-color: #5687a9;
     padding: 10px;
 }
  
@@ -22,8 +22,7 @@
     margin: 5px;
     color: #fff;
     font-size: 2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    font-family:'Courier New', Courier, monospace;
 }
 .navigation__bouton{}
 

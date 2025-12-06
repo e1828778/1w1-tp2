@@ -5,28 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chhun-Sopryna-TP-2</title>
+    <!-- ---links : css -------- -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/formulaire.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/articles.css">
     <link rel="stylesheet" href="css/style.css">
-<!-- ---3 Google fonts différents: Germania One + Oswald + Uni frakturMaguntia -------- -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Oswald:wght@200..700&family=Pirata+One&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <!-- ---3 Google fonts différents: Germania One + Oswald + Uni frakturMaguntia -------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Germania+One&family=Oswald:wght@200..700&family=Pirata+One&family=UnifrakturMaguntia&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/Rolling-Stone-Logo.jpg"/>
 </head>
-<!-- ---section : hero + nav + burger-------- -->
 
 <body>
+<!-- ---section : hero + nav + burger-------- -->    
     <div class="hero" id="accueil">
 
         <div class="hero__barresup">
             <img class="hero__logo" src="img/Rolling-Stone-Logo.jpg" alt="logo" width="64" height="64">
             <h1 class="hero__titre">Outkast</h1>
+
             <nav class="navigation">
                 <label class="navigation__bouton" for="chk-burger">
                     <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" alt="hero" width="32" height="32">
                 </label>
+
                 <input type="checkbox" id="chk-burger">
+
                 <nav class="navigation__menu">
                     <a href="#accueil">Accueil</a>
                     <a href="#inscription">Inscription</a>
@@ -35,52 +44,68 @@
                     <a href="#galerie">Galerie</a>
                     <a href="#video">Vidéo</a>
                     <a href="#adresse">Adresse</a>
+                </nav>
             </nav>
         </div>
         <!-- ----------section : .centre + Titre + sous-titre + p ---------------- -->
         <header class="centre">
             <h2> 2025 : Outkast entre au Temple de la renommée du Rock & Roll</h2>
-            <h3 class="hero__centre">
-            <p>Outkast a été intronisé au Rock and Roll Hall of Fame en 2025, une reconnaissance de son impact révolutionnaire sur le hip-hop et le genre sud. La cérémonie a été marquée par des hommages de Donald Glover, Tyler, the Creator et Janelle Monáe, ainsi que des performances de Big Boi. Big Boi et André 3000 ont tous deux pris la parole, soulignant l'importance de leur collaboration et de leur parcours. </p>
-            </h3>
-            </section>
+            <p class="hero__centre">
+                Outkast a été intronisé au Rock and Roll Hall of Fame en 2025, une reconnaissance de son impact
+                    révolutionnaire sur le hip-hop et le genre sud. La cérémonie a été marquée par des hommages de
+                    Donald Glover, Tyler, the Creator et Janelle Monáe, ainsi que des performances de Big Boi. Big Boi
+                    et André 3000 ont tous deux pris la parole, soulignant l'importance de leur collaboration et de leur
+                    parcours. 
+            </p>
+            
+            <h4>
+                <p><a href="http://127.0.0.1:3000/index.html#inscription" target="_blank">Inscription</a></p>
+                <p>Auteur : Sopryna Chhun</p>
+                <p>Cours 1W1 - Mise en page web</p>
+                <p>Collège de Maisonneuve</p>
+            </h4>
         </header>
     </div>
     <!-- ----------section : Inscription---------------- -->
     <div>
         <section class="inscription centre" id="inscription">
             <h1>Inscription</h1>
+
             <form class="formulaire">
                 <div class="formulaire__div">
                     <fieldset>
                         <label class="formulaire__label" for="txt-nom">Nom</label>
                         <input class="formulaire__text" id="txt-nom" type="text" placeholder="Entrez votre nom">
                     </fieldset>
+
                     <fieldset>
                         <label class="formulaire__label" for="txt-prenom">Prénom</label>
                         <input class="formulaire__text" id="txt-prenom" type="text" placeholder="Entrez votre prenom">
                     </fieldset>
+
                     <fieldset>
                         <label class="formulaire__label" for="txt-courriel">Courriel</label>
                         <input class="formulaire__text" id="txt-courriel" type="email"
                             placeholder="Entrez votre courriel">
                     </fieldset>
                 </div>
+
                 <fieldset>
                     <legend>Abonnement</legend>
                     <label>Pro <input type="radio" name="rad-abonnement"></label>
                     <label>Intermédiaire <input type="radio" name="rad-abonnement"></label>
                     <label>Débutant <input type="radio" name="rad-abonnement"></label>
                 </fieldset>
+
                 <input type="submit" value="valider">
             </form>
         </section>
     </div>
     <!-- -----------section : Tableau------------------ -->
-
     <div>
         <section class="tableau centre" id="tableau">
             <h1>Liste des chansons enregistrées par Outkast </h1>
+            
             <table>
                 <thead>
                     <tr>
@@ -191,7 +216,7 @@
                         <td>Joyeuse Saint-Valentin</td>
                         <td>2003</td>
                         <td>Speakerboxxx/The Love Below</td>
-                        <td>5:23</td> 
+                        <td>5:23</td>
                         <td>---</td>
                         <td>André 3000</td>
                     </tr>
@@ -200,11 +225,121 @@
             </table>
         </section>
     </div>
+
+    <!-- -----------section : Articles #1------------------ -->
     <div>
         <section class="articles centre" id="articles">
             <h1>Articles</h1>
+
+            <article class="principal__article">
+                <div class="articles__div">
+                    <h2>Outkast transpèrce les frontières du hip-hop</h2>
+                    <p>Le groupe Outkast entre au Rock & Roll Hall of Fame. Le duo mythique d’Atlanta, composé de Big
+                        Boi et André 3000, entre aujourd’hui au Rock & Roll Hall of Fame lors d’une cérémonie qui se
+                        déroule à Los Angeles. Le groupe sera intronisé par Donald Glover, aussi connu sous le nom de
+                        Childish Gambino, qui avait par ailleurs créé la série “Atlanta”, ville d’origine du duo. Grâce
+                        à des albums cultes tels que “Stankonia”, “ATLiens” ou encore “Speakerboxxx/The Love Below”,
+                        Outkast est largement considéré comme l’un des groupes de hip-hop les plus importants et
+                        influents de l’histoire. Le duo a marqué la scène musicale mondiale du milieu des années 1990 au
+                        milieu des années 2000, contribuant à placer Atlanta au cœur de la culture hip-hop. Leur œuvre
+                        se distingue par une créativité musicale unique, mêlant textes complexes, productions innovantes
+                        et explorations de genres variés tels que le funk, le psychédélisme, le jazz ou encore des
+                        sonorités électroniques. Leur audace s’est également exprimée dans leur image, notamment à
+                        travers les choix stylistiques avant-gardistes d’André 3000, qui ont bousculé les codes du rap
+                        et ouvert la voie à plus de liberté artistique dans le genre.</p>
+                </div>
+                <figure class="articles__figure">
+                    <img class="articles__img" src="img/img-1.webp" alt="shoot">
+                    <figcaption class="articles__figcaption">
+                        Outkast pour Rolling Stones
+                    </figcaption>
+                </figure>
+            </article>
+            <!-- -----------section : Articles #2------------------ -->
+            <article class="principal__article">
+                <div class="articles__div">
+                    <h2>Aquemini a beau être plus pop que les deux premiers albums</h2>
+                    <p>« Ready for action« ? A l’automne 1998, OutKast débarque avec Aquemini, son troisième album qui
+                        va prouver que le rap US 90’s ne se limite plus au sempiternel match entre L.A. et N.Y.C. Qu’on
+                        peut aller chercher des prods originales ailleurs, à l’intérieur même des terres américaines, en
+                        trouvant ses inspirations dans le trip hop, le rock, la soul ou le funk… Loin des clashs ou
+                        autres egotrips remâchés et produits à la chaîne. En marge de la bataille caricaturale entre
+                        côtes Est et Ouest, les rappeurs d’Atlanta et fils prodigues de la Dunjeon Family (qui enfantera
+                        plus tard Cee-Lo Green, Janelle Monáe et Future) livrent un album qui s’imposera rapidement
+                        comme un pilier rap de cette fin de siècle… Quand le hip-hop alternatif se veut musique
+                        d’expérimentations et d’émotions, pour aligner les classiques avec une précision d’orfèvre.</p>
+                </div>
+                <figure class="articles__figure">
+                    <img class="articles__img" src="img/aquemini.jpg" alt="shoot">
+                    <figcaption class="articles__figcaption">
+                        Célébration de la certification de l'album Aquemini d'OutKast.
+                    </figcaption>
+                </figure>
+            </article>
+            <!-- -----------section : Articles #3------------------ -->
+                <article class="principal__article">
+                    <div class="articles__div">
+                        <h2>L'influence de André 3000 et B.Boi</h2>
+                        <p>Quand sort Aquemini, cela fait déjà six ans et deux albums savoureux qu’on connaît OutKast,
+                            jeune tandem rap aussi givré qu’instable : d’un côté par Andre 3000 au charisme virevoltant,
+                            maniaque du verbe au flow étincelant ; de l’autre B.Boi, sa nemesis solide et réaliste
+                            biberonnée au rap old-school, sorte de mastodonte au flow chirurgical. L’équilibre parfait
+                            entre les deux personnalités diamétralement opposées des Georgiens atteint son climax sur ce
+                            troisième opus. « You are now about entering the fifth Dimension, our only Intention is to
+                            take you high » : ces mots qui pèsent sur le dernier titre « Chonkyfire » auraient pu faire
+                            office d’introduction. L’album s’ouvre pourtant sur « Hold On, Be Strong », guitares en
+                            arpèges et voix enivrantes par Four Phonics, comme une douce libation avant de plonger vers
+                            le royaume de Psychedelia. Premières secousses avec « Return of the G » (comprenez « le
+                            retour du Gangsta ») qui sample le thème de Midnight Express pour y rajouter une harpe,
+                            quelques touches soulful, des paroles déjà incisives et un refrain immensément mélancolique.
+                        </p>
+                    </div>
+                    <figure class="articles__figure">
+                        <img class="articles__img" src="img/blknw.jpg" alt="shoot">
+                        <figcaption class="articles__figcaption">
+                            Spin magazine, séance de photo
+                        </figcaption>
+                    </figure>
+                </article>
+            <!-- -----------section : Articles #4------------------ -->
+                <article class="principal__article">
+                    <div class="articles__div">
+                        <h2>Outkast transperece les frontières du hip-hop</h2>
+                        <p> Vient alors un titre taillé pour les radios, le single « Rosa Parks » qui vaudra au duo des
+                            déconvenues judiciaires, puisque son label LaFace sera poursuivi en justice par l’avocat de
+                            Ms. Parks. Pourtant, le nom de ce symbole féminin de la lutte contre les ségrégations
+                            raciales n’est pas cité sur le titre d’OutKast, le groupe n’y faisant allusion qu’à une
+                            seule reprise dans le refrain. OutKast voulait utiliser ce nom comme une référence
+                            symbolique, pour suggérer qu’ils amenaient un nouveau son original qui allait mettre fin à
+                            la suprématie des côtes Est et Ouest. Au final, aucune sentence pour les rappeurs. Il vaudra
+                            mieux retenir cette chanson accrocheuse au hook dansant, grâce à sa rythmique enregistrée à
+                            Flushing Meadow, puissante comme un ace de Roddick à 250 km/h. Même chose pour « Skew It On
+                            The Bar-B » -repris 13 ans plus tard par The Type et Prodigy– : trois minutes de hip-hop
+                            rond et sucré sur lesquelles s’invite Raekwon du Wu-Tang (quelle époque!). Suit le titre qui
+                            donne son nom à l’album, symbole de l’alchimie entre B.Boi et Dre : « Aquemini » est la
+                            fusion entre leurs signes astrologiques, Aquarius + Gemini (chez nous ça donnerait «
+                            Vermeaux » ou « Gerseau », beaucoup moins classe). Leurs talents semblent se décupler lors
+                            de ce genre de collaboration, comme une doublette Lennon-McCartney des temps modernes. On
+                            retrouve des touches de P-Funk sur « Synthesizer » avec la légende George Clinton, dont la
+                            voix fait étrangement penser au « Look Around » de Stevie Wonder : une complainte spatiale
+                            sur le thème du progrès à tout prix. Suivent deux tracks très old-school, « Slump » et «
+                            West Savannah », évidemment emmenées par Big Boi… Puis deux facettes du titre « Da Art of
+                            Storytellin » : la première entraînante et son refrain aux choeurs soul parfaits pour en
+                            faire un single, la seconde portée par une mélodie au piano épurée pour permettre à Andre
+                            3000 et B.Boi de poser un flow toujours ciselé.</p>
+                    </div>
+                    <figure class="articles__figure">
+                        <img class="articles__img" src="img/img-2.jpg" alt="shoot">
+                        <figcaption class="articles__figcaption">
+                            Spin magazine, séance de photo
+                        </figcaption>
+                    </figure>
+                </article>
+
+
         </section>
     </div>
+
     <div>
         <section class="galerie centre" id="galerie">
             <h1>Galerie</h1>
@@ -216,71 +351,85 @@
         </section>
     </div>
 
-<!-- -----------section : Adresse (PIED-DE-PAGE)------------------ -->
-<div class="bas">
-      <footer class="pied centre">
-        <section class="pied__section">
-          <h3>Coordonnées</h3>
-          <ul>
-            <li>Étudiant: Sopryna Chhun</li>
-            <li>Cours: 1W1- Mise en page Web</li>
-            <li>Groupe : 00002</li>
-            <li>Enseignant: Eddy Martin</li>
-          </ul>
-        </section>
-        <section class="pied__section">
-          <h3>Adresse</h3>
-          <ul>
-            <li>3800 Sherbrooke est</li>
-            <li>Montréal, QC</li>
-            <li>H1X 2A2</li>
-            <li>514-254-7131</li>
-            <li>514-254-7170</li>
-          </ul>
-        </section>
-        <section class="pied__cours">
-          <h3>Cours</h3>
-          <ul>
-            <li>1W1-Mise en page Web</li>
-            <li>1J1-Animation et intéractivité en jeux</li>
-            <li>1M1-Création vidéo</li>
-            <li>1M2-Conception graphique et img matricielle</li>
-          </ul>
-        </section>
-        <section class="pied__resume">
-          <h3>En résumé</h3>
-          <li>OutKast est un groupe de hip-hop américain, originaire d'Atlanta, en Géorgie. Son style musical est un mélange de Dirty South, G-funk, soul, neo soul, rock, crunk, RnB et jazz. Il se compose des rappeurs André « André 3000 » Benjamin (anciennement Dré) et Antwan « Big Boi » Patton. Groupe de hip-hop populaire et acclamé, il popularise le genre Dirty South dans les années 1990, mêlant plusieurs genres comme le funk, la soul, la musique psychédélique, la techno, le gospel et le jazz.</li>
-        </section>
+    <!-- -----------section : Adresse (PIED-DE-PAGE)------------------ -->
+    <div class="bas">
+            <section class="pied__section">
+                <h3>Coordonnées</h3>
+                <ul>
+                    <li>Étudiant: Sopryna Chhun</li>
+                    <li>Cours: 1W1- Mise en page Web</li>
+                    <li>Groupe : 00002</li>
+                    <li>Enseignant: Eddy Martin</li>
+                </ul>
+            </section>
+            <section class="pied__section">
+                <h3>Adresse</h3>
+                <ul>
+                    <li>3800 Sherbrooke est</li>
+                    <li>Montréal, QC</li>
+                    <li>H1X 2A2</li>
+                    <li>514-254-7131</li>
+                    <li>514-254-7170</li>
+                </ul>
+            </section>
+            <section class="pied__cours">
+                <h3>Cours</h3>
+                <ul>
+                    <li>1W1-Mise en page Web</li>
+                    <li>1J1-Animation et intéractivité en jeux</li>
+                    <li>1M1-Création vidéo</li>
+                    <li>1M2-Conception graphique et img matricielle</li>
+                </ul>
+            </section>
+            <section class="pied__resume">
+                <h3>En résumé</h3>
+                <li>OutKast est un groupe de hip-hop américain, originaire d'Atlanta, en Géorgie. Son style musical est
+                    un mélange de Dirty South, G-funk, soul, neo soul, rock, crunk, RnB et jazz. Il se compose des
+                    rappeurs André « André 3000 » Benjamin (anciennement Dré) et Antwan « Big Boi » Patton. Groupe de
+                    hip-hop populaire et acclamé, il popularise le genre Dirty South dans les années 1990, mêlant
+                    plusieurs genres comme le funk, la soul, la musique psychédélique, la techno, le gospel et le jazz.
+                </li>
+            </section>
 
 
-        <figure class="pied__sociaux">
-            <a class="rca-icon" href="https://github.com/e1828778" target="_blank" rel="noopener" aria-label="Github">
-          <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="25" height="25" alt="github"/>
-
-          
-          <a class="rca-icon" href="https://fr-ca.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
-          <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=00f" width="25" height="25" alt="facebook"/>
-
-          
-          <a class="rca-icon" href="https://stackoverflow.com/questions" target="_blank" rel="noopener" aria-label="Stackoverflow">
-          <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=a00" width="25" height="25" alt="stackoverflow"/>
+            <figure class="pied__sociaux">
+                <a class="rca-icon" href="https://github.com/e1828778" target="_blank" rel="noopener"
+                    aria-label="Github" >
+                    <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="25" height="25"
+                        alt="github" ></a>
 
 
-          <a class="rca-icon" href="https://ca.linkedin.com/" target="_blank" rel="noopener" aria-label="Linkedin">
-          <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0960da" width="25" height="16" alt="linkedin"/>
+                    <a class="rca-icon" href="https://fr-ca.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Facebook">
+                        <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=00f" width="25" height="25"
+                            alt="facebook" ></a>
 
 
-          <a class="rca-icon" href="https://www.messenger.com/" target="_blank" rel="noopener" aria-label="Messenger">
-          <img src="https://s2.svgbox.net/social.svg?ic=messenger&color=00f" width="25" height="25" alt="messenger"/>
+
+                        <a class="rca-icon" href="https://stackoverflow.com/questions" target="_blank" rel="noopener"
+                            aria-label="Stackoverflow">
+                            <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=a00" width="25"
+                                height="25" alt="stackoverflow" ></a>
 
 
-          <a class="rca-icon" href="https://discord.com/" target="_blank" rel="noopener" aria-label="Discord">
-          <img src="https://s2.svgbox.net/social.svg?ic=discord&color=3609da" width="25" height="25" alt="discord"/>
-        </figure>
-      </footer>
+                            <a class="rca-icon" href="https://ca.linkedin.com/" target="_blank" rel="noopener"
+                                aria-label="Linkedin">
+                                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0960da" width="25"
+                                    height="16" alt="linkedin" ></a>
+
+
+                                <a class="rca-icon" href="https://www.messenger.com/" target="_blank" rel="noopener"
+                                    aria-label="Messenger">
+                                    <img src="https://s2.svgbox.net/social.svg?ic=messenger&color=00f" width="25"
+                                        height="25" alt="messenger" ></a>
+
+
+                                    <a class="rca-icon" href="https://discord.com/" target="_blank" rel="noopener"
+                                        aria-label="Discord">
+                                        <img src="https://s2.svgbox.net/social.svg?ic=discord&color=3609da" width="25"
+                                            height="25" alt="discord" ></a>
+            </figure>
     </div>
 
-        </section>
-    </div>     
 </body>
 </html>

@@ -1,0 +1,36 @@
+/* conteneur principal */
+.articles{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* element du conteneur de la 1ere colonne */
+.articles__div{
+    display: flex;
+    gap: 20px;
+  
+}
+/* element du conteneur de la 1ere colonne */
+.articles__figure{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+    order: 1; /*img to L txt to R + vice-versa*/
+}
+/* odd= impair & */
+.articles:nth-of-type(odd) .articles__figure {
+    flex-direction: row-reverse;
+  
+}
+.articles__div h1{}
+
+.articles__div p{
+    font-style: normal;
+}
+
+.articles__img{
+    width:400px ;
+    height: auto;
+}
+
+.articles__figcaption{}
